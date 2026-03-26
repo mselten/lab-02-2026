@@ -2,7 +2,7 @@ import psutil
 import requests
 import time
 
-SERVER_URL = "http://localhost:80/stats"
+SERVER_URL = "http://aether95.zcu.cz/stats"
 
 
 def send_stats():
@@ -21,7 +21,7 @@ def main():
 
     while True:
         send_stats()
-        time.sleep(1)
+        time.sleep(0.01)
 
 
 if __name__ == "__main__":
